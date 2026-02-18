@@ -3,18 +3,18 @@ import { Container, Box, TextField, Paper, Typography } from "@mui/material";
 import { GridPlacement } from "@/features/gridPlacement";
 
 export function App() {
-  const [value, setValue] = React.useState("1,1 NORTH");
+  const [value, setValue] = React.useState("2,2 EAST");
 
   return (
     <Container sx={{ py: 4 }}>
       <Paper sx={{ p: 3 }}>
         <Typography variant="h5" sx={{ mb: 2 }}>
-          Grid Placement Demo
+          Toy Robot - Grid Placement Visualizer
         </Typography>
 
         <Box sx={{ display: "grid", gap: 2, maxWidth: 420 }}>
           <TextField
-            label='Placement (e.g. "1,1 NORTH")'
+            label='Placement (e.g. "2,2 EAST")'
             value={value}
             onChange={(e) => setValue(e.target.value)}
             fullWidth
